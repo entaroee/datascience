@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(dplyr)\nplayers <- read.table(\"play-index_pgl_finder.cgi_stats.csv\", header = TRUE, blank.lines.skip=TRUE, fill=TRUE, sep=',')\nplayers %>% \n  filter(X3P>100) %>%\n  group_by(Season) %>%\n  summarize(median(PTS))",
+    "created" : 1470300612965.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2533249765",
+    "id" : "3C59F0C6",
+    "lastKnownWriteTime" : 1470305568,
+    "last_content_update" : 1470305568374,
+    "path" : "~/R/datascience/nba1.r",
+    "project_path" : "nba1.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
